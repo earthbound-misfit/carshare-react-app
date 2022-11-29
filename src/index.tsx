@@ -12,7 +12,8 @@ import { Home, About, Cars, Account, Profile, Settings } from './components'
 // import { Provider } from 'react-redux';
 // import { store } from './redux/store';
 
-const image = "img src='assets/road-trip.jpg' className='img-fluid w-100' alt='...'"
+const name = "Betty Boop"
+const email = "betty@boop.com"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -24,7 +25,7 @@ root.render(
     <Router>
       <Switch>
         <Route exact path="/">
-          <Home image={image}/>
+          <Home />
         </Route>
         <Route path='/about'>
           <About></About>
@@ -33,7 +34,7 @@ root.render(
           <Account></Account>
         </Route>
         <Route path='/profile'>
-          <Profile></Profile>
+          <Profile name={name} email={email}></Profile>
         </Route>
         <Route path='/settings'>
           <Settings></Settings>

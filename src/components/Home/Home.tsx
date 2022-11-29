@@ -1,15 +1,12 @@
 import React from 'react';
 import { Navbar } from '../../components'
 
-interface Props {
-  image: string;
-}
 
-export const Home = ( props: Props ) => {
+export const Home = () => {
   return (
     <>
       <Navbar />
-      <div>{ props.image }</div>
+      <img src='assets/road-trip.jpg' className='img-fluid w-100' alt='...' />
     </>
   );
 }

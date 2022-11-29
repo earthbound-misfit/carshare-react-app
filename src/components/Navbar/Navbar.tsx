@@ -20,7 +20,7 @@ export const Navbar = () => {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
-    <MDBNavbar expand='lg' light className="p-5 text-dark fixed-top">
+    <MDBNavbar expand='lg' light className="p-5 text-dark fixed-top position-absolute">
       <MDBContainer fluid>
         <MDBNavbarBrand href='/' className="fs-1 text-white">Yewy</MDBNavbarBrand>
 
