@@ -36,12 +36,12 @@ export const Navbar = () => {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='p-5 fs-5'>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='/'>
+              <MDBNavbarLink active aria-current='page' href='/' className="text-white">
                 Classic Cars
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='/about'>About</MDBNavbarLink>
+              <MDBNavbarLink href='/about' className="text-white">About</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink href='#'></MDBNavbarLink>
@@ -49,7 +49,7 @@ export const Navbar = () => {
 
             <MDBNavbarItem>
               <MDBDropdown>
-                <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                <MDBDropdownToggle tag='a' className='nav-link text-white' role='button'>
                   Account
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
