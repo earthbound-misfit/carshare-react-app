@@ -8,10 +8,6 @@ import {
   MDBNavbarNav,
   MDBNavbarItem,
   MDBNavbarLink,
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
   MDBCollapse,
 } from 'mdb-react-ui-kit';
 import { MDBInput } from 'mdb-react-ui-kit';
@@ -44,20 +40,7 @@ export const Navbar = () => {
               <MDBNavbarLink href='/about' className="text-white">About</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'></MDBNavbarLink>
-            </MDBNavbarItem>
-
-            <MDBNavbarItem>
-              <MDBDropdown>
-                <MDBDropdownToggle tag='a' className='nav-link text-white' role='button'>
-                  Account
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem link href="/profile">Profile</MDBDropdownItem>
-                  <MDBDropdownItem link href="/settings">Settings</MDBDropdownItem>
-                  <MDBDropdownItem link href="/saved-cars">Saved Cars</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
+              <MDBNavbarLink href='/dashboard' className="text-white">Dashboard</MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
 

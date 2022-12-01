@@ -6,7 +6,7 @@ import './styles.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import reportWebVitals from './reportWebVitals';
-import { Home, About, Cars, Account, Profile, Settings } from './components'
+import { Home, About, Dashboard, Profile, Settings, MyCars } from './components'
 // import { firebaseConfig } from '.firebaseConfig';
 // import 'firebase/auth';
 // import { Provider } from 'react-redux';
@@ -30,8 +30,8 @@ root.render(
         <Route path='/about'>
           <About></About>
         </Route> 
-        <Route path='/account'>
-          <Account></Account>
+        <Route path='/dashboard'>
+          <Dashboard></Dashboard>
         </Route>
         <Route path='/profile'>
           <Profile name={name} email={email}></Profile>
@@ -39,8 +39,8 @@ root.render(
         <Route path='/settings'>
           <Settings></Settings>
         </Route>
-        <Route path='/saved-cars'>
-          <Cars></Cars>
+        <Route path='/mycars'>
+          <MyCars></MyCars>
         </Route>
       </Switch>
     </Router>

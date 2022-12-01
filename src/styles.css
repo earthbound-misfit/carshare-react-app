@@ -1,6 +1,63 @@
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  
 }
+
+.bg-image {
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: relative;
+  
+}
+
+.sidenav-container {
+  margin: 20px;
+  z-index: 1;
+  position: absolute;
+}
+
+.sidenav {
+  overflow: hidden;
+  color: black;
+  margin-block-start: 150px;
+  display: block;
+  margin-left: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.sidenav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+#profile, #mycars, #settings {
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
